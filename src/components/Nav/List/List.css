@@ -1,0 +1,93 @@
+/* List Big */
+
+.list-big {
+  display: none;
+  gap: 40px;
+}
+
+.list-big li {
+  position: relative;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.list-big li::before {
+  content: '';
+  width: 0;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -3px;
+  background-color: #ffda56;
+  margin: auto;
+  transition: width 0.3s;
+}
+
+.list-big li:hover::before {
+  width: 100%;
+}
+
+.list-big a {
+  color: var(--color);
+}
+
+/* List Small */
+
+.list-small {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: -100%;
+  left: 0;
+  background-color: #fff;
+  z-index: 2;
+  transition: top 0.5s;
+}
+
+.list-small.active {
+  top: 0;
+}
+
+.list-small li {
+  position: relative;
+  font-size: 50px;
+  cursor: pointer;
+}
+  
+.list-small li::before {
+  content: '';
+  width: 0;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -3px;
+  background-color: #ffda56;
+  margin: auto;
+  transition: width 0.3s;
+}
+  
+.list-small li:hover::before {
+  width: 100%;
+}
+  
+.list-small a {
+  color: #000;
+}
+
+/* Media Queries */
+
+@media (min-width: 850px) {
+  .list-big {
+    display: flex;
+  }
+
+  .list-small.active {
+    top: -100%;
+  }
+}

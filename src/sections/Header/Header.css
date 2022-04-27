@@ -1,0 +1,55 @@
+.header {
+  background: url("./pexels-frank-cone-3214110.jpg");
+  background-size: cover;
+  background-color: black;
+  height: calc(100vh + 300px + 100px);
+
+  position: relative;
+}
+
+/* img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+} */
+
+.about {
+  background-color: #87CEEB;
+
+  background: #2980B9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  position: relative;
+  height: 1000px;
+}
+
+.div {
+  background: url("./test.svg");
+  background-size: cover;
+  width: 100vw;
+  height: 300px;
+  position: absolute;
+  top: -300px;
+}
+
+
+.div3 {
+    background: url("./test.svg");
+    background-size: cover;
+    width: 100vw;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+}
+
+.div2 {
+    background: url("./test2.svg");
+    background-size: cover;
+    width: 100vw;
+    height: 800px;
+    position: absolute;
+    /* top: -300px; */
+    top: 200px;
+  }
