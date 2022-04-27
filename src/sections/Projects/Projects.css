@@ -1,0 +1,72 @@
+.projects {
+  position: relative;
+  background: #2980B9;
+  background: -webkit-linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9);
+  background: linear-gradient(to bottom, #d4f8ff, #ffee9e);
+  padding-bottom: 400px;
+}
+  
+.projects .container {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  padding-top: 100px;
+}
+  
+.projects .container h3 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+  
+.projects .container h4 {
+  font-size: 15px;
+  margin-bottom: 100px;
+}
+
+.projects .container h5 {
+  margin-bottom: 10px;
+}
+  
+.projects .content {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+  
+.projects .content div {
+  width: 300px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 25px;
+  padding: 40px 10px;
+}
+
+.projects .content div h4 {
+  margin: 0;
+}
+
+.projects .divider1 {
+  width: 100vw;
+  height: 300px;
+  background: url("../../assets/images/dividers/wavy-loops2.svg") center;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+}
+  
+  
+@media (min-width: 850px) {
+  .projects .container h3 {
+    font-size: 40px;
+  }
+  
+  .projects .container h4 {
+    font-size: 20px;
+  }
+
+  .projects .container h5 {
+    font-size: 20px;
+  }
+}
+  
