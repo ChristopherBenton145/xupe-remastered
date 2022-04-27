@@ -1,0 +1,77 @@
+.team {
+  position: relative;
+  background: #2980B9;
+  background: -webkit-linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9);
+  background: linear-gradient(to bottom, #ffdb3c, #ffeea3);
+  padding-bottom: 400px;
+}
+  
+.team .container {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  padding-top: 350px;
+}
+  
+.team .container h3 {
+  font-size: 30px;
+  margin-bottom: 100px;
+}
+  
+.team .container h4 {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+  
+.team .content {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+  
+.team .content div {
+  width: 300px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 25px;
+  padding: 10px 0;
+  padding-top: 0;
+}
+
+.team .content div img {
+  border-top-left-radius: 25px; 
+  border-top-right-radius: 25px; 
+}
+
+
+.team .divider1 {
+  width: 100vw;
+  height: 300px;
+  transform: rotate(180deg);
+  background: url("../../assets/images/dividers/wavy-loops2.svg") center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+}
+  
+.team .divider2 {
+  width: 100vw;
+  height: 300px;
+  background: url("../../assets/images/dividers/drip.svg") center;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+}
+  
+  
+@media (min-width: 850px) {
+  .team .container h3 {
+    font-size: 40px;
+  }
+  
+  .team .container h4 {
+    font-size: 20px;
+  }
+}
+  

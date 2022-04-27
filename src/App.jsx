@@ -2,6 +2,7 @@ import React from 'react';
 import Header from "./sections/Header/Header";
 import Services from "./sections/Services/Services";
 import Projects from "./sections/Projects/Projects";
+import Team from "./sections/Team/Team";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <Services />
       <Projects />
+      <Team />
     </>
   );
 }
