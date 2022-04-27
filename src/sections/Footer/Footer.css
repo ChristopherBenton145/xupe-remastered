@@ -1,0 +1,79 @@
+.footer {
+  width: 100vw;
+  position: absolute;
+  background-color: #fff5e8;
+  padding-top: 500px;
+  z-index: -2;
+}
+
+.footer .container {
+  background-color: #303030;
+}
+
+.footer .content {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+.footer .content h5 {
+  color: #fff;
+  font-size: 30px;
+}
+
+.footer .content p {
+  color: rgb(227, 227, 227);
+  font-size: 20px;
+}
+
+.footer .content div {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 10px;
+  padding-bottom: 100px;
+}
+
+.footer .content input {
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.footer .content button {
+  background-color: #ffda56;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.footer .content button:hover {
+  transform: scale(1.05);
+}
+
+.footer .content button:active {
+  transform: scale(0.9);
+}
+
+.footer .content .divider1 {
+  width: 100vw;
+  height: 500px;
+  background: url("../../assets/images/dividers/mountian.svg");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.footer .content .divider2 {
+  width: 100vw;
+  height: 500px;
+  background: url("../../assets/images/dividers/trees.svg");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}

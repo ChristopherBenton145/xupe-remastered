@@ -3,6 +3,7 @@ import Header from "./sections/Header/Header";
 import Services from "./sections/Services/Services";
 import Projects from "./sections/Projects/Projects";
 import Team from "./sections/Team/Team";
+import Footer from "./sections/Footer/Footer";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Services />
       <Projects />
       <Team />
+      <Footer />
     </>
   );
 }
