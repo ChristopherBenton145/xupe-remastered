@@ -1,0 +1,70 @@
+.services {
+  position: relative;
+  background: #2980B9;
+  background: -webkit-linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9);
+  background: linear-gradient(to bottom, #FFFFFF, #6DD5FA, #2980B9);
+  padding-bottom: 500px;
+  z-index: -2;
+}
+
+.services .container {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.services .container h3 {
+  font-size: 30px;
+  margin-bottom: 125px;
+}
+
+.services .container h4 {
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+
+.services .content {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.services .content div {
+  width: 300px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 25px;
+  padding: 40px 10px;
+}
+
+.clouds-background {
+  background: url("../../assets/images/backgrounds/clouds-background.svg");
+  background-size: cover;
+  width: 100vw;
+  height: 800px;
+  position: absolute;
+  top: 200px;
+  z-index: -1;
+}
+
+.services .divider1 {
+  width: 100vw;
+  height: 300px;
+  background: url("../../assets/images/dividers/wavy-loops.svg") center;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+}
+
+
+@media (min-width: 850px) {
+  .services .container h3 {
+    font-size: 40px;
+  }
+
+  .services .container h4 {
+    font-size: 20px;
+  }
+}

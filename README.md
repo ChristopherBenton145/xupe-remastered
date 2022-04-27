@@ -31,7 +31,7 @@
 ### Installation
 1. Clone the repo
    ```sh
-   git clone https://github.com/ChristopherBenton145/premium-landing-page
+   git clone https://github.com/ChristopherBenton145/xupe-remastered
    ```
 2. Install NPM packages
    ```sh

@@ -4,7 +4,7 @@ import Nav from "../../components/Nav/Nav";
 
 function Header() {
   return (
-    <header className='header'>
+    <header className='header' id="home">
       <Nav />
       <div className='content'>
         <h2>We create spectacular digital solutions.</h2>
