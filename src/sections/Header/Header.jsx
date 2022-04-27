@@ -1,23 +1,18 @@
 import React from 'react';
 import './Header.css';
 import Nav from "../../components/Nav/Nav";
-// import image from "./mobile-background.png"
-// src={image}
-import image from "./test2.svg";
 
 function Header() {
   return (
-    <>
     <header className='header'>
       <Nav />
-      {/* <img src={image} /> */}
-        <div className='div3'></div>
+      <div className='content'>
+        <h2>We create spectacular digital solutions.</h2>
+        <h3>Xupe is a web devlopment company building modern web applications for small to medium-sized businesses and startups.</h3>
+        <button>Get Started</button>
+      </div>
+      <div className='divider1' />
     </header>
-    <section className='about'>
-      {/* <div className='div'></div> */}
-      <div className='div2'></div>
-    </section>
-    </>
   );
 }
 

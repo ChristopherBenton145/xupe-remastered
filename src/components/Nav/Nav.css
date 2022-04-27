@@ -29,6 +29,6 @@
   position: absolute;
   left: 0;
   bottom: -50px;
-  background: url("../../sections/Header/test3.svg") center bottom;
+  background: url("./nav-point.svg") center bottom;
   background-size: cover;
 }

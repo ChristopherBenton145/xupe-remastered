@@ -1,55 +1,65 @@
 .header {
-  background: url("./pexels-frank-cone-3214110.jpg");
-  background-size: cover;
-  background-color: black;
-  height: calc(100vh + 300px + 100px);
-
+  height: calc(100vh + 400px);
   position: relative;
+  background: url("../../assets/images/backgrounds/space-background.jpg");
+  background-size: cover;
 }
 
-/* img {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-} */
-
-.about {
-  background-color: #87CEEB;
-
-  background: #2980B9;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-  position: relative;
-  height: 1000px;
+.header .content {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  text-align: center;
+  padding-top: 200px;
+  margin: auto;
 }
 
-.div {
-  background: url("./test.svg");
-  background-size: cover;
+.header h2 {
+  color: #fff;
+  font-size: 40px;
+}
+
+.header h3 {
+  color: rgb(224, 224, 224);
+  font-size: 20px;
+}
+
+.header button {
+  background-color: #ffda56;
+  border: none;
+  border-radius: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  padding: 10px 20px;
+  transition: transform 0.2s;
+}
+
+.header button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.header button:active {
+  transform: scale(0.9);
+}
+
+.header .divider1 {
   width: 100vw;
   height: 300px;
+  background: url("../../assets/images/dividers/clouds.svg");
+  background-size: cover;
   position: absolute;
-  top: -300px;
+  bottom: 0;
 }
 
-
-.div3 {
-    background: url("./test.svg");
-    background-size: cover;
-    width: 100vw;
-    height: 300px;
-    position: absolute;
-    bottom: 0;
-}
-
-.div2 {
-    background: url("./test2.svg");
-    background-size: cover;
-    width: 100vw;
-    height: 800px;
-    position: absolute;
-    /* top: -300px; */
-    top: 200px;
+@media (min-width: 850px) {
+  .header h2 {
+    font-size: 50px;
   }
+
+  .header h3 {
+    font-size: 30px;
+  }
+}
