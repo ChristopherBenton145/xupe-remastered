@@ -7,7 +7,7 @@ import NavDivider from './NavDivider/NavDivider';
 import { toggleMenu } from './Menu/Menu';
 
 export function gotoSection(element) {
-  SmoothScroll(element, 275);
+  SmoothScroll(element, 350);
   
   if (document.querySelector('.menu').classList.contains('active')) {
     toggleMenu();
@@ -15,13 +15,13 @@ export function gotoSection(element) {
 }
 
 function SmoothScroll(element, time) {
-  const SVS_B = () => window.scrollBy(0, eAmt / 2);
+  const SVS_B = () => window.scrollBy(0, eAmt);
   const eTop = element.getBoundingClientRect().top;
   const eAmt = eTop / 100;
   let curTime = 0;
   
   while (curTime <= time) {
-    window.setTimeout(SVS_B, curTime, eAmt, 'center');
+    window.setTimeout(SVS_B, curTime, eAmt, 'top');
     curTime += time / 100;
   }
 }
@@ -38,7 +38,7 @@ function Nav() {
         activateMenu(3, items1, items2);
       } else if (window.scrollY > 99999) {
         activateMenu(2, items1, items2);
-      } else if (window.scrollY > 300) {
+      } else if (window.scrollY > 600) {
         activateMenu(1, items1, items2);
       } else {
         activateMenu(0, items1, items2);
