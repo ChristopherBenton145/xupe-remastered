@@ -1,19 +1,20 @@
-import React from 'react';
+import React, { memo } from 'react';
 import './Header.css';
-import Nav from "../../components/Nav/Nav";
+import Nav from '../../components/Nav/Nav';
+import Divider from '../../components/Divider/Divider';
 
 function Header() {
   return (
-    <header className='header' id="home">
+    <header className='header' id='home'>
       <Nav />
       <div className='content'>
         <h2>We create spectacular digital solutions.</h2>
         <h3>Xupe is a web devlopment company building modern web applications for small to medium-sized businesses and startups.</h3>
-        <button>Get Started</button>
+        <button>GET STARTED</button>
       </div>
-      <div className='divider1' />
+      <Divider type='multiClouds' position='bottom: 0' rotation='0deg' color='#fff' height='300px' />
     </header>
   );
 }
 
-export default Header;
+export default memo(Header);

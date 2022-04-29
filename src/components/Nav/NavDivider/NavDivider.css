@@ -1,4 +1,5 @@
 .nav-divider {
+  width: 100vw;
   position: absolute;
   top: calc(var(--nav-height) - 1px);
   left: 0;
