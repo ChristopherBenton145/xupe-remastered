@@ -9,10 +9,10 @@ function App() {
   return (
     <>
       <Header />
-      <Services />
-      <Projects />
-      <Team />
-      <Footer />
+      {/* <Services /> */}
+      {/* <Projects /> */}
+      {/* <Team /> */}
+      {/* <Footer /> */}
     </>
   );
 }
