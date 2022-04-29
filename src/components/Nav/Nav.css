@@ -1,34 +1,26 @@
 .nav {
-  --background: none;
-  --color: #fff;
-  --point-display: none;
+  --nav-height: 60px;
 
   width: 100vw;
-  height: 70px;
+  height: var(--nav-height);
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
   top: 0;
-  left: 0;
-  background-color: var(--background);
-  padding: 0 30px;
-  z-index: 1;
+  background-color: var(--white);
+  padding-left: 20px;
+  padding-right: 30px;
 }
 
-.nav.active {
-  --background: #fff;
-  --color: #000;
-  --point-display: block;
+@media (min-width: 800px) {
+  .nav {
+    --nav-height: 45px;
+  }
 }
 
-.nav-point {
-  width: 100vw;
-  height: 50px;
-  display: var(--point-display);
-  position: absolute;
-  left: 0;
-  bottom: -50px;
-  background: url("./nav-point.svg") center bottom;
-  background-size: cover;
+@media (min-width: 1200px) {
+  .nav {
+    padding: 0 150px;
+  }
 }

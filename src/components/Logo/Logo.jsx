@@ -1,10 +1,10 @@
-import React from 'react';
-import logo from "../../assets/images/logo.png";
+import React, { memo } from 'react';
+import logo from '../../assets/images/logo.png';
 
 function Logo({ size }) {
   return (
-    <img src={logo} width={size} />
+    <img src={logo} width={size} alt='logo' />
   );
 }
 
-export default Logo;
+export default memo(Logo);

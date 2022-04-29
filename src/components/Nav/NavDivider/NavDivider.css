@@ -1,0 +1,7 @@
+.nav-divider {
+  position: absolute;
+  top: calc(var(--nav-height) - 1px);
+  left: 0;
+  right: 0;
+  margin: auto;
+}

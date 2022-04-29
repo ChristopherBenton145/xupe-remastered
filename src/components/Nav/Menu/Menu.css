@@ -1,13 +1,6 @@
 .menu {
-  width: 50px;
-  height: 50px;
-  background: url("../../../assets/images/icons/menu-open.svg");
   transition: transform 0.2s;
   z-index: 3;
-}
-
-.menu.active {
-  background: url("../../../assets/images/icons/menu-close.svg");
 }
 
 .menu:hover {
@@ -15,11 +8,20 @@
   cursor: pointer;
 }
 
-.menu.active:hover {
-  transform: scale(1.1) rotate(180deg);
+.menu:active {
+  transform: scale(0.9);
 }
 
-@media (min-width: 850px) {
+.menu.active svg:nth-child(1) {
+  display: none;
+}
+
+.menu:not(.active) svg:nth-child(2) {
+  display: none;
+}
+
+
+@media (min-width: 800px) {
   .menu {
     display: none;
   }

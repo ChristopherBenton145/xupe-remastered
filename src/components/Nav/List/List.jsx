@@ -1,16 +1,17 @@
-import React from 'react';
-import "./List.css";
-import { toggleMenu } from "../Menu/Menu"
+import React, { memo } from 'react';
+import './List.css';
+import { gotoSection } from '../Nav';
 
-function List({ type }) {
+function List({ type, color = '#000' }) {
   return (
-    <ul className={type}>
-      <a href='#home' onClick={() => toggleMenu()}><li>Home</li></a>
-      <a href='#services' onClick={() => toggleMenu()}><li>Services</li></a>
-      <a href='#projects' onClick={() => toggleMenu()}><li>Projects</li></a>
-      <a href='#team' onClick={() => toggleMenu()}><li>Team</li></a>
-  </ul>
+    <ul className={type} style={{ '--color': color }}>
+      <li className='active' onClick={() => gotoSection(document.querySelector('.p'))}>Home</li>
+      <li onClick={() => gotoSection(document.querySelector('.p'))}>About</li>
+      <li onClick={() => gotoSection(document.querySelector('.p'))}>Projects</li>
+      <li onClick={() => gotoSection(document.querySelector('.p'))}>Team</li>
+      <li onClick={() => gotoSection(document.querySelector('.p'))}>News</li>
+    </ul>
   );
 }
 
-export default List;
+export default memo(List);
