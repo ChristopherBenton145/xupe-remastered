@@ -32,11 +32,12 @@ function Nav() {
     const items2 = document.querySelector('.list-small').childNodes;
 
     window.onscroll = function() {
+      console.log(window.scrollY);
       if (window.scrollY > 99999) {
         activateMenu(4, items1, items2);
       } else if (window.scrollY > 99999) {
         activateMenu(3, items1, items2);
-      } else if (window.scrollY > 99999) {
+      } else if (window.scrollY > 1800) {
         activateMenu(2, items1, items2);
       } else if (window.scrollY > 600) {
         activateMenu(1, items1, items2);

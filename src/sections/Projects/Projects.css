@@ -1,16 +1,16 @@
 .projects {
   position: relative;
-  background: #2980B9;
-  background: -webkit-linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9);
-  background: linear-gradient(to bottom, #d4f8ff, #ffee9e);
-  padding-bottom: 400px;
+  background: #91EAE4;
+  background: -webkit-linear-gradient(to bottom, #91EAE4, #fff4d0);
+  background: linear-gradient(to bottom, #91EAE4, #fff4d0);
+  padding-bottom: 200px;
 }
   
 .projects .container {
   width: 90%;
   text-align: center;
   margin: auto;
-  padding-top: 100px;
+  padding-top: 125px;
 }
   
 .projects .container h3 {
@@ -25,6 +25,7 @@
 
 .projects .container h5 {
   margin-bottom: 10px;
+  color: var(--primary);
 }
   
 .projects .content {
@@ -33,30 +34,22 @@
   gap: 50px;
   flex-wrap: wrap;
 }
-  
-.projects .content div {
-  width: 300px;
-  background-color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+.projects .content img {
+  width: 350px;
   border-radius: 25px;
-  padding: 40px 10px;
-}
-
-.projects .content div h4 {
-  margin: 0;
-}
-
-.projects .divider1 {
-  width: 100vw;
-  height: 300px;
-  background: url("../../assets/images/dividers/wavy-loops2.svg") center;
-  background-size: cover;
-  position: absolute;
-  bottom: 0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
   
-  
-@media (min-width: 850px) {
+@media (min-width: 800px) {
+  .projects {
+    padding-bottom: 300px;
+  }
+
+  .projects .container {
+    padding-top: 200px;
+  }
+
   .projects .container h3 {
     font-size: 40px;
   }
@@ -70,3 +63,8 @@
   }
 }
   
+@media (min-width: 1200px) {
+  .projects .container {
+    padding-top: 350px;
+  }
+}
