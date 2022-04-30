@@ -1,28 +1,28 @@
 .header {
-  height: calc(100vh + 300px);
+  min-height: calc(100vh + 250px);
   position: relative;
-  /* background: url("../../assets/images/backgrounds/space-background.jpg") center center; */
-  background-color: pink;
+  background: url("../../assets/images/backgrounds/space-background.jpg") center center;
   background-size: cover;
 }
 
-.header .content {
-  width: 80%;
+.header .container {
+  width: 80vw;
+  height: 100vh;
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 50px;
   text-align: center;
-  padding-top: 125px;
   margin: auto;
 }
 
-.header h2 {
+.header h1 {
   color: var(--white);
   font-size: 40px;
 }
 
-.header h3 {
+.header h2 {
   color: var(--lightgray);
   font-size: 20px;
   text-shadow: 2px 4px 3px rgba(0,0,0,0.5);
@@ -31,6 +31,7 @@
 .header button {
   background-color: var(--primary);
   border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 50px;
   font-size: 25px;
   padding: 10px 25px;
@@ -38,8 +39,9 @@
 }
 
 .header button:hover {
-  cursor: pointer;
   transform: scale(1.025);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+  cursor: pointer;
 }
 
 .header button:active {
@@ -47,29 +49,21 @@
 }
 
 @media (min-width: 800px) {
-  .header .content {
-    padding-top: 150px;
+  .header h1 {
+    font-size: 55px;
   }
 
   .header h2 {
-    font-size: 50px;
-  }
-
-  .header h3 {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 
 @media (min-width: 1200px) {
-  .header .content {
-    padding-top: 225px;
+  .header h1 {
+    font-size: 65px;
   }
 
   .header h2 {
-    font-size: 60px;
-  }
-
-  .header h3 {
-    font-size: 40px;
+    font-size: 35px;
   }
 }
