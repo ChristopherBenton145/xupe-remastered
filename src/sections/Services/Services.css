@@ -1,0 +1,55 @@
+.services {
+  position: relative;
+  background: #2980B9;
+  background: -webkit-linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9);
+  background: linear-gradient(to bottom, #FFFFFF, #6DD5FA, #2980B9);
+  padding-bottom: 200px;
+  z-index: -2;
+}
+
+.services::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url('../../assets/images/backgrounds/clouds-background.svg');
+  background-size: cover;
+  z-index: -1;
+}
+
+.services .container {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  padding-top: 75px;
+}
+
+.services .container h2 {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.services .container h3 {
+  font-size: 15px;
+}
+
+.services .content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+@media (min-width: 800px) {
+  .services .container h2 {
+    font-size: 40px;
+    margin-bottom: 100px;
+  }
+
+  .services .container h3 {
+    font-size: 20px;
+  }
+}

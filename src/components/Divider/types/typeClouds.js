@@ -6,9 +6,9 @@ function typeClouds(customStyles = ``, properties = {}) {
     ${customStyles}
   `;
 
-  if (properties.position == 'top') styles += `top: 0;`;
+  if (properties.position == 'top') styles += `top: -1px;`;
   if (properties.position == 'middle') styles += `top: 50%;`;
-  if (properties.position == 'bottom') styles += `bottom: 0;`;
+  if (properties.position == 'bottom') styles += `bottom: -1px;`;
 
   return `
   <svg style="${styles}" class='divider' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.01 95.43" preserveAspectRatio="none">
