@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import './About.css';
 import serviceIcon1 from '../../assets/images/icons/service-icon-1.png';
 import serviceIcon2 from '../../assets/images/icons/service-icon-2.png';
@@ -33,4 +33,4 @@ function About() {
   );
 }
 
-export default About;
+export default memo(About);

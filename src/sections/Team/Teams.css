@@ -1,8 +1,9 @@
 .team {
   position: relative;
-  background: #2980B9;
+  /* background: #2980B9;
   background: -webkit-linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9);
-  background: linear-gradient(to bottom, #ffdb3c, #ffeea3);
+  background: linear-gradient(to bottom, #ffdb3c, #ffeea3); */
+  background-color: #ffe07f;
   padding-bottom: 400px;
 }
   

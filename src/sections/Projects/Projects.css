@@ -1,16 +1,16 @@
 .projects {
   position: relative;
-  background: #91EAE4;
-  background: -webkit-linear-gradient(to bottom, #91EAE4, #fff4d0);
-  background: linear-gradient(to bottom, #91EAE4, #fff4d0);
-  padding-bottom: 200px;
+  background: #a8ff78;
+  background: -webkit-linear-gradient(to top, #78ffd6, #a8ff78);
+  background: linear-gradient(to top, #78ffd6, #a8ff78);
+  padding-bottom: 300px;
 }
   
 .projects .container {
   width: 90%;
   text-align: center;
   margin: auto;
-  padding-top: 125px;
+  padding-top: 275px;
 }
   
 .projects .container h3 {
@@ -42,12 +42,8 @@
 }
   
 @media (min-width: 800px) {
-  .projects {
-    padding-bottom: 300px;
-  }
-
   .projects .container {
-    padding-top: 200px;
+    padding-top: 325px;
   }
 
   .projects .container h3 {
@@ -60,11 +56,5 @@
 
   .projects .container h5 {
     font-size: 20px;
-  }
-}
-  
-@media (min-width: 1200px) {
-  .projects .container {
-    padding-top: 350px;
   }
 }

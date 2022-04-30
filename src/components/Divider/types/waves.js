@@ -1,6 +1,6 @@
 function waves(position, rotation, color, height) {
   const styles = `
-    max-height: ${height};
+    height: ${height};
     ${position};
     transform: rotate(${rotation});
     fill: ${color};
