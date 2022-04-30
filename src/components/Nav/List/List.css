@@ -50,7 +50,6 @@
   left: 0;
   background-color: var(--white);
   opacity: 0;
-  z-index: 2;
   pointer-events: none;
   transition: opacity 0.3s;
 }
@@ -76,7 +75,7 @@
   left: 0;
   right: 0;
   bottom: -3px;
-  background-color: #ffda56;
+  background-color: var(--primary);
   margin: auto;
   transition: width 0.3s;
 }
@@ -86,7 +85,8 @@
 }
   
 .list-small.active li {
-  animation: fade-in 1s forwards;
+  transform: translateX(-15%);
+  animation: fade-in 300ms cubic-bezier(0.52, -0.80, 0.52, 0.52) forwards;
 }
 
 .list-small.active li:nth-child(1) {
@@ -111,6 +111,7 @@
 
 @keyframes fade-in {
   to {
+    transform: translateX(0);
     opacity: 1;
   }
 }

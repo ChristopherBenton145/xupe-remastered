@@ -5,17 +5,14 @@
 
   width: 100vw;
   height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 5;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.loading svg {
-  animation: load-loader 1s calc(var(--delay) / 2) forwards;
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation: load var(--duration) var(--delay) forwards;
+  z-index: 5;
 }
 
 .loading::before {
@@ -40,6 +37,16 @@
   animation: load-screen var(--duration) var(--delay) forwards;
   background-color: var(--color);
   z-index: -1;
+}
+
+.loading svg {
+  animation: load-loader 1s calc(var(--delay) / 2) forwards;
+}
+
+@keyframes load {
+  to {
+    pointer-events: none;
+  }
 }
 
 @keyframes load-screen {

@@ -10,8 +10,6 @@
 <!-- ABOUT -->
 ## About
 * This is a remaster of an existing website. This is the orginal site <a href="https://www.xupe.org/">https://www.xupe.org/</a>
-* The orginal site may look semi modern, it still has a lot of faults and things that could be improved.
-* For this remaster I focused mainly on the design. The main tool I used for design was Figma.
 
 ### Built With
 * HTML

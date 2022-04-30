@@ -1,4 +1,4 @@
-import React, { useEffect, memo } from 'react';
+import React, { memo } from 'react';
 import './Loading.css';
 
 function Loading({ color = '#fff', duration = '1', delay = '1' }) {

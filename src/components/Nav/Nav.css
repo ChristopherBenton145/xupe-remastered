@@ -10,9 +10,9 @@
   top: 0;
   left: 0;
   background-color: var(--white);
-  /* padding-left: 20px;
-  padding-right: 30px; */
-  /* z-index: 2; */
+  padding-left: 20px;
+  padding-right: 30px;
+  z-index: 2;
 }
 
 .nav::before {
@@ -29,10 +29,7 @@
 
 @media (min-width: 1200px) {
   .nav {
-    padding: 0 150px;
+    padding-left: 200px;
+    padding-right: 210px;
   }
-}
-
-body {
-  background-color: pink;
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import Loading from './components/Loading/Loading';
 import Header from "./sections/Header/Header";
 import About from "./sections/About/About";
@@ -21,4 +21,4 @@ function App() {
   );
 }
 
-export default App;
+export default memo(App);
