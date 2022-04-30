@@ -27,25 +27,25 @@ function SmoothScroll(element, time) {
 }
 
 function Nav() {
-  useEffect(() => {
-    const items1 = document.querySelector('.list-big').childNodes;
-    const items2 = document.querySelector('.list-small').childNodes;
+  // useEffect(() => {
+  //   const items1 = document.querySelector('.list-big').childNodes;
+  //   const items2 = document.querySelector('.list-small').childNodes;
 
-    window.onscroll = function() {
-      console.log(window.scrollY);
-      if (window.scrollY > 99999) {
-        activateMenu(4, items1, items2);
-      } else if (window.scrollY > 99999) {
-        activateMenu(3, items1, items2);
-      } else if (window.scrollY > 1800) {
-        activateMenu(2, items1, items2);
-      } else if (window.scrollY > 600) {
-        activateMenu(1, items1, items2);
-      } else {
-        activateMenu(0, items1, items2);
-      }
-    }
-  }, []);
+  //   window.onscroll = function() {
+  //     console.log(window.scrollY);
+  //     if (window.scrollY > 99999) {
+  //       activateMenu(4, items1, items2);
+  //     } else if (window.scrollY > 99999) {
+  //       activateMenu(3, items1, items2);
+  //     } else if (window.scrollY > 1800) {
+  //       activateMenu(2, items1, items2);
+  //     } else if (window.scrollY > 600) {
+  //       activateMenu(1, items1, items2);
+  //     } else {
+  //       activateMenu(0, items1, items2);
+  //     }
+  //   }
+  // }, []);
 
   function activateMenu(item, items1, items2) {
     if (!(items1[item].classList.contains('active'))) {
@@ -58,11 +58,11 @@ function Nav() {
 
   return (
     <nav className='nav'>
-      <Logo size='125px' />
-      <Menu size='50px' color='#000' />
-      <List type='list-small' color='#000' />
-      <List type='list-big' color='#000' />
-      <NavDivider color='#fff' rotation='180deg' />
+      {/* <Logo size='125px' /> */}
+      {/* <Menu size='50px' color='#000' /> */}
+      {/* <List type='list-small' color='#000' /> */}
+      {/* <List type='list-big' color='#000' /> */}
+      {/* <NavDivider color='#fff' rotation='180deg' /> */}
     </nav>
   );
 }

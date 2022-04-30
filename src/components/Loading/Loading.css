@@ -1,0 +1,55 @@
+.loading {
+  --color: #fff;
+  --duration: 1s;
+  --delay: 1s;
+
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading svg {
+  animation: load-loader 1s calc(var(--delay) / 2) forwards;
+}
+
+.loading::before {
+  content: '';
+  width: 50vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation: load-screen var(--duration) var(--delay) forwards;
+  background-color: var(--color);
+  z-index: -1;
+}
+
+.loading::after {
+  content: '';
+  width: 50vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  animation: load-screen var(--duration) var(--delay) forwards;
+  background-color: var(--color);
+  z-index: -1;
+}
+
+@keyframes load-screen {
+  to {
+    width: 0;
+  }
+}
+
+@keyframes load-loader {
+  to {
+    opacity: 0;
+  }
+}

@@ -1,7 +1,8 @@
 .header {
   height: calc(100vh + 300px);
   position: relative;
-  background: url("../../assets/images/backgrounds/space-background.jpg") center center;
+  /* background: url("../../assets/images/backgrounds/space-background.jpg") center center; */
+  background-color: pink;
   background-size: cover;
 }
 

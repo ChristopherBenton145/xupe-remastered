@@ -1,9 +1,10 @@
 import React, { memo } from 'react';
-import logo from '../../assets/images/logo.png';
+import whiteLogo from '../../assets/images/white-logo.png';
+import blackLogo from '../../assets/images/black-logo.png';
 
 function Logo({ size }) {
   return (
-    <img src={logo} width={size} alt='logo' />
+    <img src={blackLogo} width={size} alt='logo' />
   );
 }
 

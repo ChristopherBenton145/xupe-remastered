@@ -8,20 +8,31 @@
   align-items: center;
   position: fixed;
   top: 0;
+  left: 0;
   background-color: var(--white);
-  padding-left: 20px;
-  padding-right: 30px;
-  z-index: 2;
+  /* padding-left: 20px;
+  padding-right: 30px; */
+  /* z-index: 2; */
 }
 
-@media (min-width: 800px) {
-  .nav {
-    --nav-height: 45px;
-  }
+.nav::before {
+  content: '';
+  width: 100vw;
+  height: 60px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  transform: rotate(180deg);
+  background: url('data:image/svg+xml;charset=utf8, <svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 46.42" preserveAspectRatio="none"><title>book-bottom</title><g id="Layer_3" data-name="Layer 3"><path class="cls-1" d="M0,177.36s194.23-1.13,213-5.44c34.74-7.95,37-18.34,37-18.34s2,11.25,30.5,18.24C301.44,177,500,177.36,500,177.36V200H0Z" transform="translate(0 -153.58)"/></g></svg>');
+  z-index: -1;
 }
 
 @media (min-width: 1200px) {
   .nav {
     padding: 0 150px;
   }
+}
+
+body {
+  background-color: pink;
 }
