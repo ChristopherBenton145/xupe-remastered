@@ -1,0 +1,17 @@
+.stat h4 {
+  font-size: 40px;
+}
+
+.stat p {
+  margin: 10px;
+}
+
+@media (min-width: 1200px) {
+  .stat h4 {
+    font-size: 50px;
+  }
+      
+  .stat p {
+    font-size: 25px;
+  }
+}

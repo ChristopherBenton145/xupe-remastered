@@ -12,7 +12,7 @@ function Header() {
       <div className="container">
         <h1>We create spectacular digital solutions.</h1>
         <h2>Xupe is a web devlopment company building modern web applications for small to medium-sized businesses and startups.</h2>
-        <button onClick={() => gotoSection('.about', 500)}>Get Started</button>
+        <button onClick={() => gotoSection('.services', 500)}>Get Started</button>
       </div>
       <Divider type={typeClouds(``, { height: '250px', color: '#fff', position: 'bottom' })} />
     </header>
