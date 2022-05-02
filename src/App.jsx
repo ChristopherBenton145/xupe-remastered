@@ -8,14 +8,14 @@ import Footer from "./sections/Footer/Footer";
 
 function App() {
   return (
-    <>
+    <div className='app'>
       <Loading color='#fff' duration='1' delay='1.5' />
       <Header />
       <Services />
       <Projects />
       <Team />
       <Footer />
-    </>
+    </div>
   );
 }
 
