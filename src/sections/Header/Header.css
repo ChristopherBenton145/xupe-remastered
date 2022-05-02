@@ -1,4 +1,5 @@
 .header {
+  width: 100vw;
   min-height: calc(100vh + 250px);
   position: relative;
   background: url("../../assets/images/backgrounds/space-background.jpg") center center;

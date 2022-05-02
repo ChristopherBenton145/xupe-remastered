@@ -1,4 +1,5 @@
 .services {
+  width: 100vw;
   position: relative;
   background: #2980B9;
   background: -webkit-linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9);

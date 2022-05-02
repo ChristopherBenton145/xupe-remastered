@@ -22,7 +22,7 @@ function Projects() {
             <img className='project' src={project3} alt='Project' />
           </div>
         </div>
-        <Divider type={typeWaves(1, `transform: scale(-1, 1);`, { height: '350px', color: 'rgba(41, 128, 185, 0.7)', position: 'top' })} />
+        <Divider type={typeWaves(1, `transform: scale(-1, 1);`, { height: '350px', color: 'rgba(41, 128, 185, 0.5)', position: 'top' })} />
         <Divider type={typeWaves(1, `transform: scale(-1, 1);`, { height: '250px', color: '#2980B9', position: 'top' })} />
         <Divider type={typeWaves(2, ``, { height: '100px', color: '#fdf3f6', position: 'bottom' })} />
       </section>

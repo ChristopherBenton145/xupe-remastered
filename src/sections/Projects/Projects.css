@@ -1,4 +1,5 @@
 .projects {
+  width: 100vw;
   position: relative;
   background: #D0E0F9;
   background: -webkit-linear-gradient(to top, #EFF1FC, #D0E0F9);
@@ -43,6 +44,7 @@
 }
 
 .projects2 {
+  width: 100vw;
   position: relative;
   background-color: #ffefe2;
   padding-bottom: 300px;

@@ -22,7 +22,9 @@ function Nav() {
     const items2 = document.querySelector('.list-small').childNodes;
 
     window.onscroll = function() {
-      if (onScreen('.projects .content')) {
+      if (onScreen('.team .content')) {
+        activateMenu(3, items1, items2);
+      } else if (onScreen('.projects .content')) {
         activateMenu(2, items1, items2);
       } else if (onScreen('.services .content')) {
         activateMenu(1, items1, items2);

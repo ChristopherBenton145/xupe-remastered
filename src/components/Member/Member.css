@@ -1,0 +1,60 @@
+.member {
+  width: 320px;
+  background-color: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.member h4 {
+  font-size: 25px;
+}
+
+.member h5 {
+  font-size: 15px;
+}
+
+.member p {
+  font-size: 12px;
+}
+
+.member img {
+  width: 300px;
+  border-radius: 5px;
+}
+
+.member div {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  border-top: 1px solid var(--lightgray);
+  padding-top: 10px;
+}
+
+.member div svg {
+  transition: transform 0.2s;
+}
+
+.member div svg:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+  .member {
+    width: 420px;
+  }
+
+  .member h4 {
+    font-size: 30px;
+  }
+
+  .member p {
+    font-size: 22px;
+  }
+
+  .member img {
+    width: 400px;
+    margin-bottom: 10px;
+  }
+}
