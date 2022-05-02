@@ -1,10 +1,8 @@
 import React, { memo } from 'react';
-import whiteLogo from '../../assets/images/white-logo.png';
-import blackLogo from '../../assets/images/black-logo.png';
 
-function Logo({ size }) {
+function Logo({ type, size }) {
   return (
-    <img src={blackLogo} width={size} alt='Logo' />
+    <img src={type} width={size} alt='Logo' />
   );
 }
 

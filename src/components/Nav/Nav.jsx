@@ -4,6 +4,7 @@ import Logo from "../Logo/Logo";
 import Menu from "./Menu/Menu";
 import List from "./List/List";
 import { toggleMenu } from './Menu/Menu';
+import blackLogo from '../../assets/images/black-logo.png';
 import $ from 'jquery';
 
 export function gotoSection(element, time) {
@@ -51,7 +52,7 @@ function Nav() {
 
   return (
     <nav className='nav'>
-      <Logo size='140px' />
+      <Logo type={blackLogo} size='140px' />
       <Menu size='60px' color='#000' />
       <List type='list-small' color='#000' />
       <List type='list-big' color='#000' />
